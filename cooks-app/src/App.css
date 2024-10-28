@@ -1,0 +1,48 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.main-section {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden; /* Ensures no overflow for the main section */
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 40px; /* More padding for a cleaner look */
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  color: #2a9d8f;
+}
+
+.dashboard-content p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  line-height: 1.6;
+}

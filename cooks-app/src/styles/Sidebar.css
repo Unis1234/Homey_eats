@@ -1,0 +1,60 @@
+.sidebar {
+  width: 230px;
+  background-color: #536161;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
+  top: 80px;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.section-header:hover {
+  background-color: rgb(192, 241, 231);
+  color: black;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.section-name {
+  font-size: 1.1rem;
+}
+
+.submenus {
+  list-style-type: none;
+  padding-left: 75px;
+  margin: 5px 0;
+  background-color: #333;
+}
+
+.submenus li {
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.submenus li:hover {
+  color: rgb(124, 234, 215);
+  font-weight: bold;
+
+  
+}

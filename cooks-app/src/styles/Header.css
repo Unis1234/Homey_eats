@@ -1,0 +1,152 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(180, 238, 225);
+  color: white;
+  width: 98%; /* Full width */
+  position: fixed; /* Stay at the top */
+  top: 0;
+  z-index: 1000; /* Ensure header stays on top */
+  height: 60px; /* Fixed height for consistency */
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* Text color for app name */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 0.5rem;
+}
+
+.icon:hover {
+  color: #ccc;
+}
+
+.icon.profile-icon {
+  order: 3; /* Profile icon first */
+}
+
+.icon.notifications-icon {
+  order: 2; /* Notifications icon second */
+}
+
+.icon.quick-actions-icon {
+  order: 1; /* Quick actions icon last */
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #536161;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px; /* Font size for dropdown items */
+  font-family: 'Arial', sans-serif; /* Set the font for all dropdowns */
+  font-weight: 400;
+}
+
+.dropdown ul li:hover {
+  background-color: rgb(192, 241, 231);
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e84a4a;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: rgb(15, 8, 8);
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #536161;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  top: 40px;
+  font-size: 12px;
+  z-index: 900; /* Ensure it appears on top */
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.toggle-switch:hover .tooltip {
+  top: 60px; /* Align tooltip below the toggle button */
+  right:17%;
+  /* transform: translateX(-50%); */
+}
